@@ -1,0 +1,41 @@
+package finalReview2;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+public class number11 {
+	public static void main(String[] args) throws FileNotFoundException{
+		File theFile = new File("C:/Scrabble.txt");
+		Scanner rdr = new Scanner(theFile);	
+		int count= 0;
+		while (rdr.hasNextLine()){
+			count++;
+		}
+		String[][] students = new String[count][3];
+		for (int r = 0; r< students.length; r++){
+			for (int c = 0; c< students[r].length; c++){
+				while(rdr.hasNextLine()){
+					students[r][c] = rdr.nextLine();
+				}
+			}
+		}
+	
+		}
+		
+		
+	}
+	
+	public static String getHighAverage(intString[][] inVal){
+		int average = 0;
+		int maxAverage = 0;
+		int sum = 0;
+		for (int r = 0; r< inVal.length; r++){
+			for (int c = 1; c< inVal[r].length; c++){
+				sum += inVal[r][c];
+			}
+			average = sum/3;
+			if a
+	}
+
+}

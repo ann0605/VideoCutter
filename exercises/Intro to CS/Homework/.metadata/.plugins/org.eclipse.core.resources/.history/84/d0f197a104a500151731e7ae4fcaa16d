@@ -1,0 +1,27 @@
+package finalReview2;
+
+public class Course {
+	
+	     int enroll = 30;
+	     int  coursenumber;
+	   public Course (int inval) {
+	      max = inval;
+	      enroll = 40
+	        }
+	   public Course () {
+	      max = 100;
+	        }
+	public void AddStudents(int number) {
+	       enroll = enroll + number;
+	       if (enroll > max) {throw Exception e1}
+	         }
+	public  void  DropStudents(int number) {
+	      enroll = enroll - number;
+	         if (enroll <0) {throw Exception e2}
+	         }
+	       }
+	public int getSize() {
+	       return enroll;
+	    }
+	}
+	

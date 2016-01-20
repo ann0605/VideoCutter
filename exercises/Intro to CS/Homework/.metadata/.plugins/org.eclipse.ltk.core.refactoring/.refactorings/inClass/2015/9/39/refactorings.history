@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;chap5.java&apos; to &apos;inClass/inClass&apos;&#x0A;- Original project: &apos;inClass&apos;&#x0A;- Destination element: &apos;inClass/inClass&apos;&#x0A;- Original element: &apos;chap5.java&apos;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/&lt;inClass" element1="/&lt;{chap5.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1443010772411" units="1" version="1.0"/>
+</session>

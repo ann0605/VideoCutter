@@ -1,0 +1,20 @@
+package finalReview2;
+
+public class scoresArray {
+	public static void main(String[] args){
+		int[] scores = {5,4,3,5};
+		int count1 = 0;
+		int count2 = 0;
+		int firstSet = 0;
+		Arrays.sort(scores);
+		for(int i = 0; i<scores.length - 1; i++){
+			if (scores[i+1] == scores[i]){
+				count1 +=1;
+				firstSet = scores[i];
+			}
+			else
+			
+		}
+	}
+
+}

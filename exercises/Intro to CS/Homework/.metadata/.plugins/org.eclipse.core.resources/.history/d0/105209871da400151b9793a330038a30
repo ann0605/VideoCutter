@@ -1,0 +1,22 @@
+package finalReview2;
+
+import java.io.File;
+import java.util.Scanner;
+
+public class number11 {
+	public static void main(String[] args){
+		File theFile = new File("C:/Scrabble.txt");
+		
+		Scanner rdr = new Scanner(theFile);
+		while (rdr.hasNextLine()){
+			String student = rdr.nextLine();
+			
+		}
+		
+	}
+	
+	public static String getHighAverage(){
+		
+	}
+
+}

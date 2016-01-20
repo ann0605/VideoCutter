@@ -1,0 +1,19 @@
+import java.util.ArrayList;
+
+public class compareString {
+	public static void main(String[] args){
+		ArrayList<String> listOfInterests = new ArrayList<String>();
+		
+		listOfInterests.add("Environmentalism");
+		listOfInterests.add("Environmentalism")
+		
+	}
+public static String inputString(int n){
+	while (input != "end")
+		Scanner user = new Scanner(System.in);
+
+		input = user.nextLine();
+		listOfInterests.add(input);
+		return null;
+}
+}

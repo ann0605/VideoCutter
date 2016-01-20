@@ -1,0 +1,19 @@
+package midterm2Prep;
+
+public class number2 {
+	public static void main(String[] args){
+		int[][] sales = { {2323,50,40,54 },
+                {3333,40,60,60,40, 39},
+                {3421,50,60, 88,89}, // many more lines of data go here 
+                {80,99 }   };
+for (int i = 0; i<sales.length; i++){
+	for (int j = 0; j< sales.length;j++){
+		if (sales[i][j]>80){
+			System.out.println("The number of sales with quantity over 80 is" + sales[i][j])
+		}
+	}
+}
+
+	}
+
+}

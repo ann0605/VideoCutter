@@ -1,0 +1,36 @@
+package midterm2Prep;
+
+public class number2 {
+	public static void main(String[] args){
+		int[][] sales = { {2323,50,40,54 },
+                {3333,40,60,60,40, 39},
+                {3421,50,60, 88,89}, // many more lines of data go here 
+                {80,99 }   };
+		int totalCurrent = 0; int totalNext = 0; int max = 0;
+		for (int i = 0; i<sales.length; i++){
+			for (int j = 1; j< sales[i].length;j++){
+				if (sales[i][j]>80) {
+					System.out.println("The number of sales with quantity over 80 is" + sales[i][j]);
+				}
+			}
+		}
+		for (int i = 0; i<sales.length-1; i++){
+			totalCurrent = 0;totalNext = 0;
+			for (int j = 1; j< sales[i].length;j++){
+				
+				totalCurrent += sales[i][j];
+				totalNext += sales[i+1][j];
+			}
+			if (totalCurrent<totalNext){
+				max = totalNext;
+			}
+			else{
+				max = totalCurrent;
+
+			}
+		System.out.println("The hisghest quatity sold in total is " + max);
+		}
+
+	}
+
+}

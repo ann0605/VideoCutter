@@ -1,0 +1,25 @@
+package midterm2Prep;
+
+public class stopWatch {
+	private long startTime; 
+	private long endTime;
+	public stopWatch(){
+		startTime = System.currentTimeMillis();
+
+	}
+	//static?? -- want each instance to have its own version
+	public long getStartTime(){
+		return startTime;
+	}
+	public long getStopTime(){
+		return endTime;
+	}
+	public  void start(){
+		
+	}
+	public  void stop(){
+		
+	}
+	
+
+}

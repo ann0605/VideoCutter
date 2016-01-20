@@ -1,0 +1,12 @@
+package midterm2Prep;
+import java.util.Random;
+public class number1 {
+	public static void main(String[] args){
+		int[] myArrray = new int[100];
+		Random r = new Random(123); //starts from 0 and goes to bound-1
+		for (int i = 0; i<myArray.length; i++){
+			myArray[i] = r.nextInt(11) + 10;
+		}
+	}
+
+}

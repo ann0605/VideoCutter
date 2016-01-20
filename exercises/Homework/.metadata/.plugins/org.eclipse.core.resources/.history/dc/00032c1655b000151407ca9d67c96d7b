@@ -1,0 +1,34 @@
+package testing;
+
+public class test1 {
+	
+	public static void main(String[] args){
+		int mostFrequent = 0;
+		int count1= 0; int count2 = 0;
+		int max1 = 0;
+		int max2= 0;
+		int secFreq = 0; 
+		int tFreq = 0;
+		int[] myArray= {1, 1 ,3, 3, 4, 4, 4};
+		for (int i = 0; i< myArray.length-1; i++){
+			if (myArray[i] == myArray[i+1]){
+				count++;
+				if (count>max){
+					max= count;
+					mostFrequent = myArray[i];
+					count = 0;
+			}
+				else if(count<max&& myArray[i]<mostFrequent){
+					secFreq = myArray[i];
+				}
+			}
+				
+		
+		}
+		
+		System.out.println("the most frequent number is " + mostFrequent);
+		System.out.println("The next most frequent is " + secFreq);
+	
+	}
+}
+

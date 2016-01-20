@@ -1,0 +1,40 @@
+package finalReview2;
+
+//2.	The sales is a two dimensional array that has a row for each item in inventory.  
+//The first column of the row is the item number, 
+//the remaining numbers are quantities sold to different customers. 
+//For example, the first row provides information on item number 2323, 
+//and says one customer was sold 50 of item 2323, another was sold 40 of the item and another was sold 54. 
+//So for item 2323, 3   customers were sold a total of 144 of item 2323. 
+//Assume your program already has the following:
+//    int[][] sales = { {2323,50,40,54 },
+//                            {3333,40,60,60,40 39},
+//                            {3421,50,60, 88,89}, 
+//                            …                                    // many more lines of data go here 
+//                            {80,99 }   };
+//Write code to be inserted into the Main method  to output,  via System.out.printlin,  the following three values:
+//•	Number of sales where the quantity sold was over 80.
+//•	The item number with the highest quantity sold in total (sum of all quantities for that item)
+//•	The item number with the most customers.
+
+public class twoDArrays {
+	public static void main(String[] args){
+		  int sum;
+		  int[][] sales = { {2323,50,40,54}, 
+				  			{3333,40,60,60,40,39},
+				  			{3421,50,60, 88,89}, 
+//				  …                                    // many more lines of data go here 
+				  {80,99 }   };
+		for (int r = 0; r<sales.length; r++){
+			for (int c = 1; c<sales[r].length; c++){
+				sum+=sales[r][c]
+			}
+			if sum>80{
+				System.out.println(sales[0]);
+			}
+			sum = 0;
+		}
+	}
+	
+
+}

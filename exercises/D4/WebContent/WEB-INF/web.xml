@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>D4</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <security-constraint>
+  	<display-name>MySec</display-name>
+  	<web-resource-collection>
+  		<web-resource-name>All App</web-resource-name>
+  		<description/>
+  		<url-pattern>/*</url-pattern>
+  		<http-method>GET</http-method>
+  		<http-method>POST</http-method>
+  		<http-method>HEAD</http-method>
+  		<http-method>PUT</http-method>
+  		<http-method>OPTIONS</http-method>
+  		<http-method>TRACE</http-method>
+  		<http-method>DELETE</http-method>  	
+  	</web-resource-collection>
+  	<auth-constraint>
+  		<description/>
+  		<role-name>aptech</role-name>
+  	</auth-constraint>
+  </security-constraint>
+  <login-config>
+  	<auth-method>FORM</auth-method>
+  	<realm-name>My Realm</realm-name>
+  	<form-login-config>
+  		<form-login-page>/login.jsp</form-login-page>
+  		<form-error-page>/login_error.jsp</form-error-page>
+  	</form-login-config>
+  </login-config>
+ <security-role>
+ 	<description/>
+ 	<role-name>aptech</role-name>
+ </security-role>
+</web-app>

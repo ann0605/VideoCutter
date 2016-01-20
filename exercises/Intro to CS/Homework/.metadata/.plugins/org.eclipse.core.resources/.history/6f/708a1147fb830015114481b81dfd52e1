@@ -1,0 +1,21 @@
+package midterm2Prep;
+
+import java.util.Random;
+
+public class MainStopWatch {
+	public static void main(String[] args){
+		double[] myArray = new double[100000];
+		Random r = new Random(123);
+		stopWatch myWatch = new stopWatch();
+		myWatch.getStartTime();
+		myWatch.start();
+		for (int i = 0; i< myArray.length; i++){
+			myArray[i] = r.nextDouble();//myArray[i] = Math.random() *myArray.length
+		}
+		selectionSort(myArray);
+		myWatch.stop();
+			
+			
+	}
+
+}

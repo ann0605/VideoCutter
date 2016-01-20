@@ -1,0 +1,21 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class compareString {
+	public static void main(String[] args){
+		
+		
+	}
+public static String inputString(){
+	String input;
+	Object Scanner;
+	Object ArrayList;
+	ArrayList<String> listOfInterests = new ArrayList<String>();
+		
+	while (input != "end")
+		java.util.Scanner user = new Scanner(System.in);
+		System.out.println("Please enter your interest: ");
+		input = user.nextLine();
+		listOfInterests.add(input);
+		return null;
+}

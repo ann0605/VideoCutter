@@ -1,0 +1,12 @@
+package midterm2Prep;
+
+public class MainStopWatch {
+	public static void main(String[] args){
+		stopWatch myWatch = new stopWatch();
+		stopWatch.getStartTime;
+		for (int i = 0; i< 100000; i++)
+			
+			
+	}
+
+}
